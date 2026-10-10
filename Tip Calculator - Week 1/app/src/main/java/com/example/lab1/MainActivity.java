@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
                     corbasayısı = Integer.parseInt(sCorba);
                 }
                 String syemek = yemekAdet.getText().toString();
-                if (!sCorba.isEmpty()) {
+                if (!syemek.isEmpty()) {
                     yemeksayısı= Integer.parseInt(syemek);
                 }
                 String statlı = tatliAdet.getText().toString();
-                if (!sCorba.isEmpty()) {
+                if (!statlı.isEmpty()) {
                     tatlisayısı= Integer.parseInt(statlı);
                 }
 
