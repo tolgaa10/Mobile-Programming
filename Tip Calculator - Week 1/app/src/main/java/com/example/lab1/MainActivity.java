@@ -51,11 +51,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 String syemek = yemekAdet.getText().toString();
                 if (!sCorba.isEmpty()) {
-                    yemeksayısı= Integer.parseInt(sCorba);
+                    yemeksayısı= Integer.parseInt(syemek);
                 }
                 String statlı = tatliAdet.getText().toString();
                 if (!sCorba.isEmpty()) {
-                    tatlisayısı= Integer.parseInt(sCorba);
+                    tatlisayısı= Integer.parseInt(statlı);
                 }
 
                 double corbatutar = corbasayısı * 100;
