@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="24dp">
+
+    <!-- Başlık -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hesap"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Süt Seçeneği ve Fiyatı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <CheckBox
+            android:id="@+id/cbSut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Süt"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etSutFiyat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="50" />
+    </LinearLayout>
+
+    <!-- Şeker Seçeneği ve Fiyatı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <CheckBox
+            android:id="@+id/cbSeker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Şeker"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etSekerFiyat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="150" />
+    </LinearLayout>
+
+    <!-- Krema Seçeneği ve Fiyatı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <CheckBox
+            android:id="@+id/cbKrema"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Krema"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etKremaFiyat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="50" />
+    </LinearLayout>
+
+    <!-- Tarçın Seçeneği ve Fiyatı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <CheckBox
+            android:id="@+id/cbTarcin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tarçın"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etTarcinFiyat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="50" />
+    </LinearLayout>
+
+    <!-- En Son Satır: %10 Bahşiş -->
+    <CheckBox
+        android:id="@+id/cbBahsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="%10 Bahşiş"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Hesapla Butonu -->
+    <Button
+        android:id="@+id/btnHesapla"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Hesapla"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Toplam Fiyatı Gösteren TextView -->
+    <TextView
+        android:id="@+id/tvToplamFiyat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toplam Fiyat: 0 TL"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+</LinearLayout>

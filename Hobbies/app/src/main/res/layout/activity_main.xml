@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="24dp">
+
+
+    <!-- Başlık -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobi Seçimi"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Açıklama Metni -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lütfen hobilerinizi seçiniz:"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Kitap Okuma Seçeneği -->
+    <CheckBox
+        android:id="@+id/cbKitap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kitap Okuma"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Film İzleme Seçeneği -->
+    <CheckBox
+        android:id="@+id/cbFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Film İzleme"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Spor Yapma Seçeneği -->
+    <CheckBox
+        android:id="@+id/cbSpor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spor Yapma"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Müzik Dinleme Seçeneği (Yeni) -->
+    <CheckBox
+        android:id="@+id/cbMuzik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Müzik Dinleme"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Seyahat Etme Seçeneği (Yeni) -->
+    <CheckBox
+        android:id="@+id/cbSeyahat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seyahat Etme"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbBilgisayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bilgisayar oynamak"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+    <!-- Yemek Yapma Seçeneği (Yeni) -->
+    <CheckBox
+        android:id="@+id/cbYemek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yemek Yapma"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Onaylama Butonu -->
+    <Button
+        android:id="@+id/btnOnayla"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="ONAYLA"
+        android:textSize="16sp" />
+
+</LinearLayout>
