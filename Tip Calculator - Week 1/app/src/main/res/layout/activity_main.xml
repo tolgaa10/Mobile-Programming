@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="24dp">
+
+    <!-- ================= ÇORBA BÖLÜMÜ ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Çorba"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birim Fiyat: 100 TL"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCorbaAdet"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            android:hint="Çorba Kase Adedi?"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txttoplamcorba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam Fiyat: 0 TL"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- ================= ANA YEMEK BÖLÜMÜ ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ana Yemek"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birim Fiyat: 200 TL"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etYemekAdet"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            android:hint="Yemek Tabak Adedi?"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txttoplamyemek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam Fiyat: 0 TL"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- ================= TATLI BÖLÜMÜ ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tatlı"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birim Fiyat: 150 TL"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etTatliAdet"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            android:hint="Tatli Servis Adedi?"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txttoplamtatli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam Fiyat: 0 TL"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- ================= BAHŞİŞ HESAPLA BUTONU ================= -->
+    <Button
+        android:id="@+id/btnHesapla"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#D1D5DB"
+        android:text="BAHŞİŞ HESAPLA"
+        android:textColor="#1F2937"
+        android:textSize="16sp" />
+
+    <!-- ================= ALT SONUÇ ALANLARI ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toplam Yemek:"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvToplamYemekSonuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 TL"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toplam Bahşiş (%5):"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvToplamBahsisSonuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 TL"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toplam Hesap:"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvToplamHesapSonuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 TL"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>
